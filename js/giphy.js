@@ -1,9 +1,10 @@
 //window.onload = function(e) {};
+//onclick of add button
 $("#btn1").on("click", function() {
-  var array = [];
-  var text = $("#buttondata").val();
+  //  var array = [];
+  var text = $("#buttondata").val(); //getting value of the entered text
 
-  $("#buttonadd").append(`&nbsp;&nbsp;<button id=${text}>${text}</button>`);
+  $("#buttonadd").append(`&nbsp;&nbsp;<button id=${text}>${text}</button>`); //creating new button element and adding to the div
   $("button").on("click", function(e) {
     $("#output").empty();
     $("#buttondata").val("");
@@ -22,7 +23,13 @@ $("#btn1").on("click", function() {
           var divdata = $("<img >");
           divdata.attr("src", response.data[i].images.fixed_height.url);
           divdata.attr("type", "animated");
+          divdata.attr("height", "150px");
+          divdata.attr("width", "150px");
           divdata.attr("id", response.data[i].id);
+          divdata.attr(
+            "style",
+            "margin-left:45%;border-radius:30%;margin-top:30px;border:2px solid red"
+          );
           let divend = `</div>`;
 
           $("#output").append(div, divdata, divend);

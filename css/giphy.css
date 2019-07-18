@@ -1,0 +1,15 @@
+#output {
+  border: solid black 1px;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 25px;
+  height: 120em;
+}
+#buttondata {
+  margin-top: 30px;
+  margin-left: 190px;
+}
+#btn1
+{
+    margin-left: 10px;
+}
