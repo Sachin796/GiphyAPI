@@ -3,13 +3,13 @@
   width: 70%;
   margin-left: 10%;
   margin-top: 25px;
-  height: 120em;
+  min-height: 30em;
+  max-height: auto;
 }
 #buttondata {
   margin-top: 30px;
   margin-left: 190px;
 }
-#btn1
-{
-    margin-left: 10px;
+#btn1 {
+  margin-left: 10px;
 }
