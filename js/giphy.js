@@ -1,10 +1,13 @@
 //window.onload = function(e) {};
 //onclick of add button
+
+
 $("#btn1").on("click", function() {
+  
   //  var array = [];
   var text = $("#buttondata").val(); //getting value of the entered text
 
-  $("#buttonadd").append(`&nbsp;&nbsp;<button id=${text}>${text}</button>`); //creating new button element and adding to the div
+  $("#buttonadd").append(`&nbsp;&nbsp;<button id=${text} type="button" class="btn btn-primary">${text} </button>`); //creating new button element and adding to the div
   $("button").on("click", function(e) {
     $("#output").empty();
     $("#buttondata").val("");
@@ -25,6 +28,7 @@ $("#btn1").on("click", function() {
           divdata.attr("type", "animated");
           divdata.attr("height", "150px");
           divdata.attr("width", "150px");
+         // divdata.attr("margin-top","20px");
           divdata.attr("id", response.data[i].id);
           divdata.attr(
             "style",
@@ -57,4 +61,7 @@ $("#btn1").on("click", function() {
       });
     }
   });
+ 
+  $("#buttondata").val("");
 });
+

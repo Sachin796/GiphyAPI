@@ -1,15 +1,26 @@
 #output {
   border: solid black 1px;
-  width: 70%;
-  margin-left: 10%;
+  width:30%;
+  margin-left: 36%;
   margin-top: 25px;
   min-height: 30em;
   max-height: auto;
 }
 #buttondata {
   margin-top: 30px;
-  margin-left: 190px;
+  margin-left: 39em;
 }
 #btn1 {
-  margin-left: 10px;
+  margin-left: 1em;
 }
+
+body h1
+{
+  margin-left: 38%;
+}
+#buttonadd
+{
+  width: 30%;
+  margin-left: 35%;
+}
+
